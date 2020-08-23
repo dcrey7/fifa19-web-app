@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="shadow p-3 mb-5" style="background-color: #222">
+  <h3 style="color:white">Welcome to the Fifa 19 player recommendation and starting bid prediction</h6><br>
+  <h10 style="color:white">Enter the team name.(copy paste any one- Arsenal ,Chelsea ,FC Barcelona,Paris Saint-Germain,Atlético Madrid) .</h10><br>
+  <h10 style="color:white">Enter the postion you want.(copy paste any one -side_df,cent_df,cent_md,cent_fw,side_fw,goalkeep).</h10><br>
+  <h10 style="color:white">Enter number of players(from 1-50, higher the number more time it takes).</h10><br>
+  <h10 style="color:white">Enter upper age limit(from 20 - 50, please dont exceed more than this)</h10>
+  
+</div>
+
+  <form action="{{url_for('recommend')}}">
+    <input type="text" name="team_chosen" class="form-control" placeholder="team_chosen">
+    <input type="text" name="postion_chosen" class="form-control" placeholder="postion_chosen">
+    <input type="text" name="num_of_players" class="form-control" placeholder="num_of_players">
+    <input type="text" name="age_up" class="form-control" placeholder="age_up">
+    <br>
+    <input type="submit" class="btn btn-info" value="Enter" style="background-color: #222" a style="color:hotpink">
+  </form>
+{% endblock %}
