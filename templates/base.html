@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+          {
+            box-sizing: border-box;
+          }
+          
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          header {
+            background-color: #007C89;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: black;
+          }
+          
+          a {
+            color: hotpink;
+          }
+          
+          article a {
+            color: #222;
+          }
+          nav {
+            background-color: #222;
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+          }
+          
+          nav ul {
+            
+          list-style-type:none;
+            padding: 0;
+          }
+          
+          nav li {
+            display:inline;
+            padding: 90px;
+           }
+          
+          article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #FFD200;
+            height: 700px; /* only for demonstration, should be removed */
+          }
+          
+          
+          aside {
+            float: right;
+            padding: 10px;
+            width: 30%;
+            background-color: #007C89;
+            height: 700px; /* only for demonstration, should be removed */
+          }
+          
+          footer {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+            color: white; 
+            height:200;
+          }
+          
+          footer li {
+            display:inline;
+            
+           }
+          
+          
+          @media (max-width: 600px) {
+            aside, article {
+              width: 100%;
+              height: auto;
+            }
+          }
+</style>
+    <meta charset="utf-8">
+    <title>Recommendor System</title>
+    <link rel="shortcut icon" href="/static/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+        <h13><strong>Welcome to Fifa19 Recommendation and Starting Bid Prediciton app</strong> </h2>
+        
+  
+	
+    </header>
+    
+    <section>
+      <nav class="navbar" >
+        
+          <a style="color:hotpink" class="nav-link" href="{{url_for('home')}}">Home</a>
+        
+      </nav>
+      
+      <article>
+       <div class="jumbotron" style="background-color: #FFD200" >
+        {% block content %}
+        {% endblock %}
+        </div>
+      </article>
+    </section>
+   
+      <aside>
+        <p a style="color:black">This app uses KNN for recommending the players suitable per team ,position and age (different teams would recommend different players for each postion and age). </p>
+        <p a style="color:black">For the starting bid prediction it used XGBoost for each of the players . </p>
+        <div class="card mb-3" style="max-width: 650px;" >
+          <div class="row no-gutters"style="background-color:#222">
+            <div class="col-md-4">
+              <img src="/static/profile.jpg" class="card-img" alt="..."style="background-color:#222">
+            </div>
+            <div class="col-md-8"style="background-color:#222">
+              <div class="card-body">
+                <h5 class="card-title" a style="color:hotpink">Abhishek Thomas</h5>
+                
+                <p a style="color:hotpink">Click the link below to know about me!</p>
+                <a href="https://www.linkedin.com/in/abhishek-thomas-2b928416b/" class="btn btn-primary" target="_blank" a style="background-color: hotpink"a style="color:black">Linkedin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </aside>
+      
+      <footer>
+        
+            
+            <p a style="color:hotpink">Contact me: abhishek01789@gmail.com,+917202849884
+            
+          
+      </footer>
+
+    
+    
+  </body>
+</html>
