@@ -43,8 +43,6 @@ This application addresses these challenges by providing:
 
 ## Technical Architecture
 
-
-
 ### Key Components
 
 #### 1. Web Application (main.py)
@@ -110,6 +108,7 @@ Bid Prediction (XGBoost)
 - Generated position-specific attributes
 - Calculated age-based potential indicators
 - Engineered monetary features (wage-to-value ratio)
+- Aggregregating team level and position wise features
 - Created physical attribute indices
 
 #### Feature Selection
@@ -209,18 +208,8 @@ Bid Prediction (XGBoost)
 
 ### 5. Model Deployment
 
-#### Serialization
+#### Hosting
 - Models saved using pickle format
-- Scalers and encoders preserved for preprocessing
-- Version control for model artifacts
+- Heoruko free tier
 
-#### API Implementation
-- RESTful API using Flask
-- JSON response format
-- Error handling and input validation
-- Rate limiting implemented
 
-#### Performance Optimization
-- Batch prediction support
-- Caching for frequent queries
-- Asynchronous processing for heavy computations
