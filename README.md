@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=_nmrCul-JOw
 
 
 ## Overview
-This web application helps football managers and scouts make data-driven decisions by providing player recommendations and market value predictions using FIFA 19 dataset. The system combines machine learning algorithms (KNN for player recommendations and XGBoost for bid predictions) to deliver actionable insights.
+This web application helps football managers and scouts make data-driven decisions by providing player recommendations and market value predictions using FIFA 19 dataset (https://www.kaggle.com/datasets/javagarm/fifa-19-complete-player-dataset). The system combines machine learning algorithms (KNN for player recommendations and XGBoost for bid predictions) to deliver actionable insights.
 
 ## Business Problem
 Football clubs face several challenges in player recruitment:
