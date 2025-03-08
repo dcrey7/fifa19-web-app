@@ -37,7 +37,7 @@ This application addresses these challenges by providing:
 - Predicts market value based on:
   - Player statistics and attributes
   - Age and potential
-  - Current club and contract status
+
 - Helps in budget planning and negotiations
 - Identifies potentially undervalued players
 
